@@ -1,0 +1,100 @@
+/* TandZ Construction — design tokens, keyframes, custom utilities */
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.20 0.02 260);
+  --foreground: oklch(0.97 0.005 100);
+  --card: oklch(0.28 0.03 260);
+  --card-foreground: oklch(0.97 0.005 100);
+  --popover: oklch(0.28 0.03 260);
+  --popover-foreground: oklch(0.97 0.005 100);
+  --primary: oklch(0.55 0.15 255);
+  --primary-foreground: oklch(0.98 0.01 100);
+  --secondary: oklch(0.32 0.03 260);
+  --secondary-foreground: oklch(0.97 0.005 100);
+  --muted: oklch(0.35 0.03 260);
+  --muted-foreground: oklch(0.72 0.02 260);
+  --accent: oklch(0.65 0.12 240);
+  --accent-foreground: oklch(0.16 0.02 250);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.98 0.01 100);
+  --border: oklch(0.38 0.03 260);
+  --input: oklch(0.32 0.03 260);
+  --ring: oklch(0.55 0.15 255);
+
+  --gradient-amber: linear-gradient(135deg, oklch(0.60 0.14 255), oklch(0.45 0.16 255));
+  --shadow-glow: 0 20px 60px -20px oklch(0.55 0.15 255 / 0.35);
+  --shadow-deep: 0 30px 80px -30px oklch(0 0 0 / 0.6);
+}
+
+* { border-color: var(--border); }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+h1, h2, h3, h4 { font-family: "Oswald", "Inter", sans-serif; letter-spacing: -0.01em; }
+
+/* Keyframes */
+@keyframes blueprint {
+  0% { stroke-dashoffset: 1000; opacity: 0; }
+  20% { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes stripe-shift {
+  from { background-position: 0 0; }
+  to { background-position: 56px 0; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-blue {
+  0%, 100% { box-shadow: 0 0 0 0 oklch(0.55 0.15 255 / 0.5); }
+  50% { box-shadow: 0 0 0 14px oklch(0.55 0.15 255 / 0); }
+}
+
+/* Custom utilities */
+.hazard-stripe {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    oklch(0.55 0.15 255) 0,
+    oklch(0.55 0.15 255) 14px,
+    oklch(0.20 0.02 260) 14px,
+    oklch(0.20 0.02 260) 28px
+  );
+  background-size: 56px 56px;
+  animation: stripe-shift 1.6s linear infinite;
+}
+.blueprint-bg {
+  background-color: oklch(0.22 0.025 260);
+  background-image:
+    linear-gradient(oklch(0.55 0.15 255 / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.55 0.15 255 / 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.text-amber-grad {
+  background: var(--gradient-amber);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.reveal {
+  opacity: 0;
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.pulse-ring { animation: pulse-blue 2s ease-out infinite; }
+
+/* Reveal-on-scroll (JS-driven) */
+.reveal-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-scroll.is-visible { opacity: 1; transform: translateY(0); }
