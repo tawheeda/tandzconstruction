@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | TandZ Construction</title>
+  <meta name="description" content="Electrical, civil, general construction, housing, industrial cleaning and transport services — delivered by TandZ Construction across South Africa." />
+  <meta name="author" content="TandZ Construction CC" />
+  <meta property="og:title" content="Services | TandZ Construction" />
+  <meta property="og:description" content="Electrical, civil, general construction, housing, industrial cleaning and transport services — delivered by TandZ Construction across South Africa." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/tandz-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'Inter', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            background: 'var(--background)',
+            foreground: 'var(--foreground)',
+            card: { DEFAULT: 'var(--card)', foreground: 'var(--card-foreground)' },
+            popover: { DEFAULT: 'var(--popover)', foreground: 'var(--popover-foreground)' },
+            primary: { DEFAULT: 'var(--primary)', foreground: 'var(--primary-foreground)' },
+            secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+            muted: { DEFAULT: 'var(--muted)', foreground: 'var(--muted-foreground)' },
+            accent: { DEFAULT: 'var(--accent)', foreground: 'var(--accent-foreground)' },
+            destructive: { DEFAULT: 'var(--destructive)', foreground: 'var(--destructive-foreground)' },
+            border: 'var(--border)',
+            input: 'var(--input)',
+            ring: 'var(--ring)',
+          },
+          borderRadius: {
+            lg: 'var(--radius)',
+            md: 'calc(var(--radius) - 2px)',
+            sm: 'calc(var(--radius) - 4px)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body class="bg-background text-foreground">
+<div class="min-h-screen flex flex-col">
+
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+    <a href="index.html" class="flex items-center group">
+      <img
+        src="assets/tandz-logo.png"
+        alt="TandZ Construction"
+        class="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105"
+      />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:brightness-110 transition-all" style="box-shadow: 0 0 24px oklch(0.55 0.15 255/0.3);">
+        Get a Quote <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </a>
+    </nav>
+
+    <button id="nav-toggle" class="md:hidden rounded-md p-2 text-foreground" aria-label="Menu">
+      <i id="icon-open" data-lucide="menu" class="h-5 w-5"></i>
+      <i id="icon-close" data-lucide="x" class="h-5 w-5 hidden"></i>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+    <div class="flex flex-col px-6 py-4 gap-1">
+      <a href="services.html" class="text-sm font-medium py-2.5">Services</a>
+      <a href="projects.html" class="text-sm font-medium py-2.5">Projects</a>
+      <a href="about.html" class="text-sm font-medium py-2.5">About</a>
+      <a href="contact.html" class="text-sm font-medium py-2.5">Contact</a>
+      <a href="contact.html" class="mt-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground text-center">Get a Quote</a>
+    </div>
+  </div>
+</header>
+<main class="flex-1">
+
+
+<section class="page-hero relative pt-40 pb-20 overflow-hidden border-b border-border">
+  <div class="absolute inset-0 blueprint-bg opacity-40"></div>
+  <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+  <div class="relative mx-auto max-w-7xl px-6 text-center">
+    <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+      <span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span> Our Services
+    </div>
+    <h1 class="mt-6 font-display text-4xl sm:text-6xl md:text-7xl font-bold uppercase leading-[1]">Construction solutions<br/><span class='text-amber-grad'>built around your needs</span></h1>
+    <p class="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">Electrical, civil, general construction, housing, industrial cleaning and transport — delivered across South Africa by one accountable contractor.</p>
+  </div>
+  <div class="hazard-stripe absolute bottom-0 left-0 right-0 h-2 opacity-80"></div>
+</section>
+
+<section class="py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      
+      <article class="reveal-scroll service-image-card" data-delay="0">
+        <div class="service-image-media">
+          <img src="assets/service-electrical.jpg" alt="Electrical Services" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"></div>
+          <div class="service-image-icon"><i data-lucide="zap" class="h-6 w-6"></i></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl font-bold uppercase tracking-wide">Electrical Services</h3>
+          <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Installation, meter reading, high-voltage maintenance and industrial fault-finding for power stations, plants and mines.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>High-voltage installations</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Meter reading & audits</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Switchgear maintenance</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Plant fault-finding</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="reveal-scroll service-image-card" data-delay="60">
+        <div class="service-image-media">
+          <img src="assets/service-civil.jpg" alt="Civil Maintenance" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"></div>
+          <div class="service-image-icon"><i data-lucide="hammer" class="h-6 w-6"></i></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl font-bold uppercase tracking-wide">Civil Maintenance</h3>
+          <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Painting, paving, plumbing, renovations and facility repairs that keep your buildings and operations moving.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Painting & finishing</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Paving & roadworks</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Plumbing repairs</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>General renovations</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="reveal-scroll service-image-card" data-delay="120">
+        <div class="service-image-media">
+          <img src="assets/service-pm.jpg" alt="General Construction" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"></div>
+          <div class="service-image-icon"><i data-lucide="building-2" class="h-6 w-6"></i></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl font-bold uppercase tracking-wide">General Construction</h3>
+          <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Offices, schools, satellite police stations, power-station upgrades and turn-key building works delivered end-to-end.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Offices & admin blocks</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Schools & learning centres</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>SAPS satellite stations</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Power-station upgrades</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="reveal-scroll service-image-card" data-delay="180">
+        <div class="service-image-media">
+          <img src="assets/service-housing.jpg" alt="Housing Projects" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"></div>
+          <div class="service-image-icon"><i data-lucide="hard-hat" class="h-6 w-6"></i></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl font-bold uppercase tracking-wide">Housing Projects</h3>
+          <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Large-scale RDP and residential developments delivered for provincial governments and human settlement programmes.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>RDP house builds</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Rural housing</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Farm housing</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Provincial-scale roll-outs</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="reveal-scroll service-image-card" data-delay="240">
+        <div class="service-image-media">
+          <img src="assets/service-cleaning.jpg" alt="Industrial Cleaning" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"></div>
+          <div class="service-image-icon"><i data-lucide="sparkles" class="h-6 w-6"></i></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl font-bold uppercase tracking-wide">Industrial Cleaning</h3>
+          <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Workshops, plants, conveyor belts, offices and rubble removal at industrial scale, with PPE-compliant crews.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Plant & workshop cleans</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Conveyor belt cleaning</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Office cleaning contracts</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Rubble & site clearance</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="reveal-scroll service-image-card" data-delay="300">
+        <div class="service-image-media">
+          <img src="assets/service-transport.jpg" alt="Transportation" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"></div>
+          <div class="service-image-icon"><i data-lucide="truck" class="h-6 w-6"></i></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl font-bold uppercase tracking-wide">Transportation</h3>
+          <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Reliable scheduled employee transport to mines, power stations and construction sites with a maintained fleet.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Employee transport</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Mine shift transport</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Power-station shuttles</span></li><li class="flex items-start gap-2 text-sm"><i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i><span>Site-to-site transfers</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="reveal-scroll service-image-card" data-delay="360">
+  <div class="service-image-media">
+    <img src="assets/service-turnkey.jpg" alt="Turnkey Infrastructure Solutions" loading="lazy" />
+    <div class="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"></div>
+    <div class="service-image-icon">
+      <i data-lucide="network" class="h-6 w-6"></i>
+    </div>
+  </div>
+
+  <div class="p-6">
+    <h3 class="font-display text-xl font-bold uppercase tracking-wide">
+      Turnkey Infrastructure Solutions
+    </h3>
+
+    <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+      Integrated infrastructure delivery across energy, water, transport and public services through design, construction and long-term development partnerships.
+    </p>
+
+    <ul class="mt-4 space-y-1.5">
+      <li class="flex items-start gap-2 text-sm">
+        <i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i>
+        <span>Design & Build projects</span>
+      </li>
+
+      <li class="flex items-start gap-2 text-sm">
+        <i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i>
+        <span>Energy infrastructure</span>
+      </li>
+
+      <li class="flex items-start gap-2 text-sm">
+        <i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i>
+        <span>Water & utility infrastructure</span>
+      </li>
+
+      <li class="flex items-start gap-2 text-sm">
+        <i data-lucide="check" class="h-4 w-4 mt-0.5 text-primary shrink-0"></i>
+        <span>Public & private partnerships</span>
+      </li>
+    </ul>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-24 border-y border-border bg-card">
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+        <span class="h-px w-8 bg-primary"></span>
+        Turnkey Division
+        <span class="h-px w-8 bg-primary"></span>
+      </div>
+
+      <h2 class="mt-5 font-display text-4xl md:text-6xl font-bold uppercase">
+        Integrated Infrastructure Solutions
+      </h2>
+
+      <p class="mx-auto mt-6 max-w-3xl text-muted-foreground leading-relaxed">
+        For nearly 30 years, TandZ Construction has delivered large-scale projects across South Africa.
+        Our Turnkey Division provides complete infrastructure solutions from planning and design through
+        construction and long-term implementation.
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      <div class="info-card">
+        <h3 class="font-display text-lg font-bold uppercase">Energy</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Infrastructure that improves energy reliability and supports future growth.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3 class="font-display text-lg font-bold uppercase">Water</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Sustainable water and utility infrastructure solutions.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3 class="font-display text-lg font-bold uppercase">Transport</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Infrastructure designed to improve mobility and efficiency.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3 class="font-display text-lg font-bold uppercase">Smart Development</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Renewable energy and technology integration for future-ready projects.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<br>
+<section class="py-20 border-y border-border bg-card">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary"><span class="h-px w-8 bg-primary"></span> Why TandZ <span class="h-px w-8 bg-primary"></span></div>
+      <h2 class="mt-4 font-display text-3xl md:text-5xl font-bold uppercase">One contractor.<br/>Every discipline.</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      
+      <div class="info-card">
+        <div class="feature-icon"><i data-lucide="calendar" class="h-5 w-5"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">23+ Years Experience</h3>
+        <p class="mt-3 text-sm text-muted-foreground leading-relaxed">Proven delivery across South Africa since 2000.</p>
+      </div>
+      <div class="info-card">
+        <div class="feature-icon"><i data-lucide="badge-check" class="h-5 w-5"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Level 1 B-BBEE</h3>
+        <p class="mt-3 text-sm text-muted-foreground leading-relaxed">Supporting transformation while maintaining exceptional standards.</p>
+      </div>
+      <div class="info-card">
+        <div class="feature-icon"><i data-lucide="users" class="h-5 w-5"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Multi-Disciplinary Teams</h3>
+        <p class="mt-3 text-sm text-muted-foreground leading-relaxed">Electrical, civil, housing and industrial expertise in-house.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <h2 class="font-display text-3xl md:text-5xl font-bold uppercase">Ready to start your project?</h2>
+    <p class="mt-5 text-lg text-muted-foreground">Speak to our team about your requirements and get a tailored solution.</p>
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="contact.html" class="btn-primary justify-center">Request a Quote <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+      <a href="projects.html" class="btn-secondary justify-center">View Projects</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-border bg-card mt-0">
+  <div class="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3">
+        <img src="assets/tandz-logo.png" alt="TandZ" class="h-10 w-auto" />
+        <div>
+          <div class="font-display font-bold uppercase tracking-wide">TandZ Construction CC</div>
+          <div class="text-xs text-muted-foreground">Building South Africa since 2000</div>
+        </div>
+      </div>
+      <p class="mt-5 max-w-md text-sm text-muted-foreground leading-relaxed">
+        Multi-discipline construction contractor delivering electrical, civil,
+        housing, cleaning and transport services across South Africa.
+      </p>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Explore</div>
+      <ul class="space-y-2 text-sm text-muted-foreground">
+        <li><a href="services.html" class="hover:text-foreground transition-colors">Services</a></li>
+        <li><a href="projects.html" class="hover:text-foreground transition-colors">Projects</a></li>
+        <li><a href="about.html" class="hover:text-foreground transition-colors">About</a></li>
+        <li><a href="contact.html" class="hover:text-foreground transition-colors">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-muted-foreground">
+        <li class="flex items-start gap-2"><i data-lucide="phone" class="h-4 w-4 mt-0.5 text-primary"></i> 013 656 1072</li>
+        <li class="flex items-start gap-2"><i data-lucide="mail" class="h-4 w-4 mt-0.5 text-primary"></i> enquries@tandz.co.za</li>
+        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="h-4 w-4 mt-0.5 text-primary"></i> 63 Cnr Mandela &amp; Allenby St, Emalahleni 1039</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-border">
+    <div class="mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+      <div>© <span id="year"></span> TandZ Construction CC. All rights reserved.</div>
+      <div>
+        Website by
+        <a href="https://ltdevstudio.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">LT Dev Studio</a>
+        in collaboration with
+        <a href="https://infotechms.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">Infotech Managed Solutions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</div></body>
+</html>

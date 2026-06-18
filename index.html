@@ -7,10 +7,11 @@
   <meta name="description" content="TandZ Construction CC — 23+ years delivering electrical, civil, general construction, project management, cleaning and transport services across South Africa." />
   <meta name="author" content="TandZ Construction CC" />
   <meta property="og:title" content="TandZ Construction | Building South Africa Since 2000" />
-  <meta property="og:description" content="23+ years. R200M+ delivered. Trusted by Eskom, Anglo, and government departments." />
+  <meta property="og:description" content="TandZ Construction CC — 23+ years delivering electrical, civil, general construction, project management, cleaning and transport services across South Africa." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <link rel="icon" type="image/png" href="assets/tandz-logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
@@ -49,485 +50,418 @@
   </script>
 
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
-<body>
-  <div class="min-h-screen bg-background text-foreground">
+<body class="bg-background text-foreground">
+<div class="min-h-screen flex flex-col">
 
-    <!-- ============ NAV ============ -->
-    <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
-      <style>
-        #site-header.scrolled { backdrop-filter: blur(24px); background-color: color-mix(in oklab, var(--background) 80%, transparent); border-bottom: 1px solid var(--border); }
-      </style>
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#top" class="flex items-center gap-3 group">
-          <div class="relative">
-            <div class="flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-2.5 text-primary-foreground font-display font-bold text-lg" style="box-shadow: 0 0 30px oklch(0.55 0.15 255/0.4);">
-              T<span class="text-primary-foreground/60">&amp;</span>Z
-            </div>
-            <span class="absolute -right-1 -top-1 h-2 w-2 rounded-full bg-primary pulse-ring"></span>
-          </div>
-          <div class="leading-tight">
-            <div class="font-display text-lg font-bold tracking-wide">TANDZ</div>
-            <div class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Construction</div>
-          </div>
-        </a>
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+    <a href="index.html" class="flex items-center group">
+      <img
+        src="assets/tandz-logo.png"
+        alt="TandZ Construction"
+        class="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105"
+      />
+    </a>
 
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="#services" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">Services<span class="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span></a>
-          <a href="#projects" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">Projects<span class="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span></a>
-          <a href="#about" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">About<span class="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span></a>
-          <a href="#contact" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">Contact<span class="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span></a>
-          <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:brightness-110 transition-all" style="box-shadow: 0 0 24px oklch(0.55 0.15 255/0.3);">
-            Get a Quote <i data-lucide="arrow-right" class="h-4 w-4"></i>
-          </a>
-        </nav>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:brightness-110 transition-all" style="box-shadow: 0 0 24px oklch(0.55 0.15 255/0.3);">
+        Get a Quote <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </a>
+    </nav>
 
-        <button id="nav-toggle" class="md:hidden rounded-md p-2 text-foreground" aria-label="Menu">
-          <i id="icon-open" data-lucide="menu" class="h-5 w-5"></i>
-          <i id="icon-close" data-lucide="x" class="h-5 w-5 hidden"></i>
-        </button>
-      </div>
-      <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
-        <div class="flex flex-col px-6 py-4 gap-3">
-          <a href="#services" class="text-sm font-medium py-2">Services</a>
-          <a href="#projects" class="text-sm font-medium py-2">Projects</a>
-          <a href="#about" class="text-sm font-medium py-2">About</a>
-          <a href="#contact" class="text-sm font-medium py-2">Contact</a>
-          <a href="#contact" class="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground text-center">Get a Quote</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-
-      <!-- ============ HERO ============ -->
-      <section id="top" class="relative min-h-screen overflow-hidden pt-24">
-        <div class="absolute inset-0">
-          <img src="assets/hero-construction.jpg" alt="TandZ Construction site at golden hour" class="h-full w-full object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background"></div>
-          <div class="absolute inset-0 blueprint-bg opacity-20 mix-blend-overlay"></div>
-        </div>
-        <svg viewBox="0 0 800 600" class="pointer-events-none absolute inset-0 h-full w-full opacity-30" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <g stroke="oklch(0.55 0.15 255)" stroke-width="1.5" fill="none" stroke-dasharray="1000" style="animation: blueprint 3s ease-out forwards;">
-            <line x1="200" y1="600" x2="200" y2="100" />
-            <line x1="200" y1="100" x2="700" y2="100" />
-            <line x1="200" y1="120" x2="700" y2="120" />
-            <line x1="200" y1="100" x2="100" y2="180" />
-            <line x1="200" y1="100" x2="280" y2="180" />
-            <line x1="500" y1="100" x2="500" y2="180" />
-            <circle cx="500" cy="200" r="8" />
-            <line x1="500" y1="208" x2="500" y2="260" />
-            <rect x="480" y="260" width="40" height="28" />
-          </g>
-        </svg>
-
-        <div class="relative mx-auto max-w-7xl px-6 py-20 lg:py-32">
-          <div class="max-w-3xl">
-            <div class="reveal inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-primary backdrop-blur-sm">
-              <span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
-              Established 2000 · Level 1 B-BBEE
-            </div>
-            <h1 class="reveal mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl" style="animation-delay: 120ms;">
-              We <span class="text-amber-grad">build</span><br />
-              what South Africa<br />
-              <span class="relative inline-block">
-                runs on.
-                <svg class="absolute -bottom-2 left-0 h-3 w-full" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true">
-                  <path d="M2 8 Q 75 0 150 6 T 298 4" stroke="oklch(0.55 0.15 255)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="320" stroke-dashoffset="320" style="animation: blueprint 1.6s 1s ease-out forwards;" />
-                </svg>
-              </span>
-            </h1>
-            <p class="reveal mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed" style="animation-delay: 300ms;">
-              Trusted by Eskom, Anglo and government departments for 23+ years.
-              Electrical installation, civil maintenance, RDP housing, project
-              management — delivered safely, on time, and built to last.
-            </p>
-            <div class="reveal mt-10 flex flex-wrap items-center gap-4" style="animation-delay: 450ms;">
-              <a href="#contact" class="group inline-flex items-center gap-3 rounded-md bg-primary px-7 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-all hover:brightness-110" style="box-shadow: 0 10px 40px -10px oklch(0.55 0.15 255/0.6);">
-                Start a project
-                <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
-              </a>
-              <a href="#projects" class="inline-flex items-center gap-2 rounded-md border border-border px-7 py-4 text-sm font-semibold text-foreground hover:bg-card transition-colors">
-                View our work
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hazard-stripe absolute bottom-0 left-0 right-0 h-3"></div>
-      </section>
-
-      <!-- ============ CLIENTS ============ -->
-      <section class="border-y border-border bg-card/50 py-8 overflow-hidden">
-        <div class="mx-auto max-w-7xl px-6">
-          <p class="text-center text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">Trusted by South Africa's biggest names</p>
-          <div class="relative overflow-hidden">
-            <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 30s linear infinite; width: max-content;">
-              <!-- duplicated for seamless loop -->
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">ESKOM</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">ANGLO AMERICAN</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">DEPT OF PUBLIC WORKS</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">SAPS</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">KUSILE POWER</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">HENDRINA POWER</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">EMALAHLENI</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">HUMAN SETTLEMENT</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">ESKOM</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">ANGLO AMERICAN</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">DEPT OF PUBLIC WORKS</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">SAPS</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">KUSILE POWER</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">HENDRINA POWER</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">EMALAHLENI</span>
-              <span class="font-display text-2xl font-bold text-muted-foreground/70 tracking-widest">HUMAN SETTLEMENT</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ SERVICES ============ -->
-      <section id="services" class="relative py-28">
-        <div class="absolute inset-0 blueprint-bg opacity-30"></div>
-        <div class="relative mx-auto max-w-7xl px-6">
-          <div class="reveal-scroll">
-            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
-              <div>
-                <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
-                  <span class="h-px w-8 bg-primary"></span> What we do
-                </div>
-                <h2 class="font-display text-4xl sm:text-6xl font-bold uppercase max-w-2xl leading-[1]">Six divisions.<br />One contractor.</h2>
-              </div>
-              <p class="max-w-md text-muted-foreground">From a single electrical install to multi-million rand housing developments, we mobilise the right crew, kit and compliance to get it built.</p>
-            </div>
-          </div>
-
-          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <!-- card template repeated -->
-            <article class="reveal-scroll group relative h-full overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]" data-delay="0">
-              <div class="relative h-48 overflow-hidden">
-                <img src="assets/service-electrical.jpg" alt="Electrical Services" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-4 left-4 grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground shadow-lg"><i data-lucide="zap" class="h-6 w-6"></i></div>
-              </div>
-              <div class="p-6">
-                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Electrical Services</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Installation, meter reading, and high-voltage maintenance for industrial and power-station environments.</p>
-                <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">Enquire <i data-lucide="arrow-right" class="h-4 w-4"></i></div>
-              </div>
-              <span class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
-            </article>
-
-            <article class="reveal-scroll group relative h-full overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]" data-delay="80">
-              <div class="relative h-48 overflow-hidden">
-                <img src="assets/service-civil.jpg" alt="Civil Maintenance" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-4 left-4 grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground shadow-lg"><i data-lucide="hammer" class="h-6 w-6"></i></div>
-              </div>
-              <div class="p-6">
-                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Civil Maintenance</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Painting, paving, plumbing, renovations and repairs that keep your facility moving.</p>
-                <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">Enquire <i data-lucide="arrow-right" class="h-4 w-4"></i></div>
-              </div>
-              <span class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
-            </article>
-
-            <article class="reveal-scroll group relative h-full overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]" data-delay="160">
-              <div class="relative h-48 overflow-hidden">
-                <img src="assets/service-pm.jpg" alt="General Construction" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-4 left-4 grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground shadow-lg"><i data-lucide="building-2" class="h-6 w-6"></i></div>
-              </div>
-              <div class="p-6">
-                <h3 class="font-display text-xl font-bold uppercase tracking-wide">General Construction</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">From offices and schools to satellite police stations and power-station upgrades.</p>
-                <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">Enquire <i data-lucide="arrow-right" class="h-4 w-4"></i></div>
-              </div>
-              <span class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
-            </article>
-
-            <article class="reveal-scroll group relative h-full overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]" data-delay="240">
-              <div class="relative h-48 overflow-hidden">
-                <img src="assets/service-housing.jpg" alt="Housing Projects" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-4 left-4 grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground shadow-lg"><i data-lucide="hard-hat" class="h-6 w-6"></i></div>
-              </div>
-              <div class="p-6">
-                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Housing Projects</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Large-scale RDP and residential developments delivered for provincial governments.</p>
-                <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">Enquire <i data-lucide="arrow-right" class="h-4 w-4"></i></div>
-              </div>
-              <span class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
-            </article>
-
-            <article class="reveal-scroll group relative h-full overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]" data-delay="320">
-              <div class="relative h-48 overflow-hidden">
-                <img src="assets/service-cleaning.jpg" alt="Industrial Cleaning" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-4 left-4 grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground shadow-lg"><i data-lucide="sparkles" class="h-6 w-6"></i></div>
-              </div>
-              <div class="p-6">
-                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Industrial Cleaning</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Workshops, plants, conveyor belts, offices and rubble removal at industrial scale.</p>
-                <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">Enquire <i data-lucide="arrow-right" class="h-4 w-4"></i></div>
-              </div>
-              <span class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
-            </article>
-
-            <article class="reveal-scroll group relative h-full overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]" data-delay="400">
-              <div class="relative h-48 overflow-hidden">
-                <img src="assets/service-transport.jpg" alt="Transportation" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-4 left-4 grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground shadow-lg"><i data-lucide="truck" class="h-6 w-6"></i></div>
-              </div>
-              <div class="p-6">
-                <h3 class="font-display text-xl font-bold uppercase tracking-wide">Transportation</h3>
-                <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Reliable employee transport to mines, power stations and construction sites.</p>
-                <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">Enquire <i data-lucide="arrow-right" class="h-4 w-4"></i></div>
-              </div>
-              <span class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ STATS ============ -->
-      <section class="relative overflow-hidden border-y border-border bg-card py-20">
-        <div class="hazard-stripe absolute top-0 left-0 right-0 h-2 opacity-80"></div>
-        <div class="mx-auto max-w-7xl px-6">
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
-            <div class="reveal-scroll text-center lg:text-left" data-delay="0">
-              <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none"><span data-counter data-to="23" data-suffix="+">0</span></div>
-              <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Years of experience</div>
-            </div>
-            <div class="reveal-scroll text-center lg:text-left" data-delay="120">
-              <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none"><span data-counter data-to="32" data-suffix="+">0</span></div>
-              <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Projects completed</div>
-            </div>
-            <div class="reveal-scroll text-center lg:text-left" data-delay="240">
-              <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none">R<span data-counter data-to="200" data-suffix="M+">0</span></div>
-              <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Rand value delivered</div>
-            </div>
-            <div class="reveal-scroll text-center lg:text-left" data-delay="360">
-              <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none"><span data-counter data-to="99" data-suffix="%">0</span></div>
-              <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Project success rate</div>
-            </div>
-          </div>
-        </div>
-        <div class="hazard-stripe absolute bottom-0 left-0 right-0 h-2 opacity-80"></div>
-      </section>
-
-      <!-- ============ PROJECTS ============ -->
-      <section id="projects" class="relative py-28">
-        <div class="mx-auto max-w-7xl px-6">
-          <div class="reveal-scroll">
-            <div class="mb-16 max-w-3xl">
-              <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
-                <span class="h-px w-8 bg-primary"></span> Selected work
-              </div>
-              <h2 class="font-display text-4xl sm:text-6xl font-bold uppercase leading-[1]">Two decades.<br />Built for keeps.</h2>
-            </div>
-          </div>
-
-          <div class="grid gap-8 lg:grid-cols-3">
-            <article class="reveal-scroll group relative overflow-hidden rounded-2xl border border-border bg-card" data-delay="0">
-              <div class="relative aspect-[4/5] overflow-hidden">
-                <img src="assets/project-powerstation.jpg" alt="Power Stations" loading="lazy" class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary-foreground">Power Stations</div>
-                <div class="absolute inset-x-5 bottom-5">
-                  <div class="text-xs text-muted-foreground uppercase tracking-wider">2006 – 2018</div>
-                  <h3 class="mt-2 font-display text-2xl font-bold leading-tight">Hendrina, Matla, Kusile, Kendal &amp; Camden</h3>
-                  <p class="mt-2 text-sm text-muted-foreground">R 50M+ delivered across Eskom power stations</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="reveal-scroll group relative overflow-hidden rounded-2xl border border-border bg-card" data-delay="100">
-              <div class="relative aspect-[4/5] overflow-hidden">
-                <img src="assets/project-school.jpg" alt="Community" loading="lazy" class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary-foreground">Community</div>
-                <div class="absolute inset-x-5 bottom-5">
-                  <div class="text-xs text-muted-foreground uppercase tracking-wider">2008 – 2012</div>
-                  <h3 class="mt-2 font-display text-2xl font-bold leading-tight">Schools, learning centres &amp; police stations</h3>
-                  <p class="mt-2 text-sm text-muted-foreground">Computer centres, science centres, satellite SAPS buildings</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="reveal-scroll group relative overflow-hidden rounded-2xl border border-border bg-card" data-delay="200">
-              <div class="relative aspect-[4/5] overflow-hidden">
-                <img src="assets/service-housing.jpg" alt="Housing" loading="lazy" class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                <div class="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent"></div>
-                <div class="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary-foreground">Housing</div>
-                <div class="absolute inset-x-5 bottom-5">
-                  <div class="text-xs text-muted-foreground uppercase tracking-wider">2016 – 2020</div>
-                  <h3 class="mt-2 font-display text-2xl font-bold leading-tight">932 RDP houses for Mpumalanga</h3>
-                  <p class="mt-2 text-sm text-muted-foreground">R 140M+ rural &amp; farm housing delivered</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ ABOUT ============ -->
-      <section id="about" class="relative py-28 overflow-hidden">
-        <div class="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-primary/10 blur-3xl"></div>
-        <div class="mx-auto max-w-7xl px-6 grid gap-16 lg:grid-cols-2 lg:items-center">
-          <div class="reveal-scroll">
-            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
-              <span class="h-px w-8 bg-primary"></span> About TandZ
-            </div>
-            <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase leading-[1.05]">A black-led contractor with a track record the parastatals trust.</h2>
-            <p class="mt-6 text-muted-foreground leading-relaxed">Founded in 2000 and led by Managing Director Dr. Gabriel Bonginkosi Ngomane, TandZ Construction has grown from a single electrical contract into a multi-discipline construction business delivering across Mpumalanga, Limpopo, Gauteng and beyond.</p>
-            <p class="mt-4 text-muted-foreground leading-relaxed">Flat structure. Experienced functional heads. Direct communication. That's why our clients come back — and why their projects finish on time.</p>
-            <div class="mt-8 flex flex-wrap gap-4">
-              <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-bold uppercase tracking-wider text-primary-foreground hover:brightness-110 transition-all">Work with us <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
-            </div>
-          </div>
-          <div class="reveal-scroll grid grid-cols-2 gap-4" data-delay="150">
-            <div class="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:-translate-y-1">
-              <div class="grid h-11 w-11 place-items-center rounded-lg bg-primary/15 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><i data-lucide="award" class="h-5 w-5"></i></div>
-              <h3 class="mt-4 font-display text-lg font-bold uppercase tracking-wide">Technical Expertise</h3>
-              <p class="mt-2 text-sm text-muted-foreground">Qualified electricians, bricklayers, plumbers and engineers in-house.</p>
-            </div>
-            <div class="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:-translate-y-1">
-              <div class="grid h-11 w-11 place-items-center rounded-lg bg-primary/15 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><i data-lucide="shield" class="h-5 w-5"></i></div>
-              <h3 class="mt-4 font-display text-lg font-bold uppercase tracking-wide">Safety First</h3>
-              <p class="mt-2 text-sm text-muted-foreground">Dedicated safety officer on every project. Zero-compromise compliance.</p>
-            </div>
-            <div class="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:-translate-y-1">
-              <div class="grid h-11 w-11 place-items-center rounded-lg bg-primary/15 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><i data-lucide="users" class="h-5 w-5"></i></div>
-              <h3 class="mt-4 font-display text-lg font-bold uppercase tracking-wide">B-BBEE Empowerment</h3>
-              <p class="mt-2 text-sm text-muted-foreground">Black-owned and led since 2000. Creating jobs where they matter.</p>
-            </div>
-            <div class="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:-translate-y-1">
-              <div class="grid h-11 w-11 place-items-center rounded-lg bg-primary/15 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><i data-lucide="clipboard-list" class="h-5 w-5"></i></div>
-              <h3 class="mt-4 font-display text-lg font-bold uppercase tracking-wide">Holistic Approach</h3>
-              <p class="mt-2 text-sm text-muted-foreground">Sustainable methods, community impact, long-term durability.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ CONTACT ============ -->
-      <section id="contact" class="relative py-28 overflow-hidden">
-        <div class="absolute inset-0 blueprint-bg opacity-40"></div>
-        <div class="relative mx-auto max-w-7xl px-6">
-          <div class="grid gap-12 lg:grid-cols-2">
-            <div class="reveal-scroll">
-              <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
-                <span class="h-px w-8 bg-primary"></span> Get a quote
-              </div>
-              <h2 class="font-display text-4xl sm:text-6xl font-bold uppercase leading-[1]">Let's build<br /><span class="text-amber-grad">something solid.</span></h2>
-              <p class="mt-6 max-w-md text-muted-foreground">Tell us about your project — electrical, civil, housing, transport or cleaning. We respond within one business day.</p>
-
-              <div class="mt-10 space-y-5">
-                <a href="tel:+27136561072" class="flex items-start gap-4 group">
-                  <div class="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-card border border-border group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><i data-lucide="phone" class="h-5 w-5"></i></div>
-                  <div>
-                    <div class="text-xs uppercase tracking-wider text-muted-foreground">Office</div>
-                    <div class="font-semibold">013 656 1072 · 061 992 3714</div>
-                  </div>
-                </a>
-                <a href="mailto:enquries@tandz.co.za" class="flex items-start gap-4 group">
-                  <div class="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-card border border-border group-hover:bg-primary group-hover:text-primary-foreground transition-colors"><i data-lucide="mail" class="h-5 w-5"></i></div>
-                  <div>
-                    <div class="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                    <div class="font-semibold">enquries@tandz.co.za</div>
-                  </div>
-                </a>
-                <div class="flex items-start gap-4">
-                  <div class="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-card border border-border"><i data-lucide="map-pin" class="h-5 w-5"></i></div>
-                  <div>
-                    <div class="text-xs uppercase tracking-wider text-muted-foreground">Address</div>
-                    <div class="font-semibold">63 Cnr Mandela &amp; Allenby Street, Emalahleni 1039</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="reveal-scroll" data-delay="150">
-              <form id="contact-form" class="rounded-2xl border border-border bg-card p-8" style="box-shadow: var(--shadow-deep);">
-                <div class="grid gap-5 sm:grid-cols-2">
-                  <div>
-                    <label for="name" class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Full name<span class="text-primary"> *</span></label>
-                    <input id="name" name="name" type="text" required class="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                  </div>
-                  <div>
-                    <label for="company" class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Company</label>
-                    <input id="company" name="company" type="text" class="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                  </div>
-                  <div>
-                    <label for="email" class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Email<span class="text-primary"> *</span></label>
-                    <input id="email" name="email" type="email" required class="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                  </div>
-                  <div>
-                    <label for="phone" class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Phone<span class="text-primary"> *</span></label>
-                    <input id="phone" name="phone" type="tel" required class="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                  </div>
-                </div>
-                <div class="mt-5">
-                  <label class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Service needed</label>
-                  <select required class="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
-                    <option value="">Select a service…</option>
-                    <option>Electrical Services</option>
-                    <option>Civil Maintenance</option>
-                    <option>General Construction</option>
-                    <option>Housing Projects</option>
-                    <option>Industrial Cleaning</option>
-                    <option>Transportation</option>
-                    <option>Other / not sure</option>
-                  </select>
-                </div>
-                <div class="mt-5">
-                  <label class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Project details</label>
-                  <textarea rows="4" required class="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Site location, scope, timeline, budget range…"></textarea>
-                </div>
-                <button type="submit" class="mt-7 w-full inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground hover:brightness-110 transition-all" style="box-shadow: 0 10px 40px -10px oklch(0.55 0.15 255/0.6);">
-                  Send enquiry <i data-lucide="arrow-right" class="h-4 w-4"></i>
-                </button>
-                <p class="mt-3 text-center text-xs text-muted-foreground">We respond within one business day.</p>
-              </form>
-
-              <div id="contact-success" class="hidden rounded-2xl border border-border bg-card p-8 text-center" style="box-shadow: var(--shadow-deep);">
-                <div class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-primary text-primary-foreground"><i data-lucide="check-circle-2" class="h-8 w-8"></i></div>
-                <h3 class="mt-6 font-display text-2xl font-bold uppercase">Thanks — message received</h3>
-                <p class="mt-2 text-muted-foreground">A member of our team will be in touch within one business day.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ============ FOOTER ============ -->
-    <footer class="border-t border-border bg-card">
-      <div class="mx-auto max-w-7xl px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-3">
-          <div class="flex h-9 items-center justify-center whitespace-nowrap rounded-md bg-primary px-2 text-primary-foreground font-display font-bold">T&amp;Z</div>
-          <div>
-            <div class="font-display font-bold uppercase tracking-wide">TandZ Construction CC</div>
-            <div class="text-xs text-muted-foreground">© <span id="year"></span> · Building South Africa since 2000</div>
-          </div>
-        </div>
-        <div class="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-          <a href="#services" class="hover:text-foreground transition-colors">Services</a>
-          <a href="#projects" class="hover:text-foreground transition-colors">Projects</a>
-          <a href="#about" class="hover:text-foreground transition-colors">About</a>
-          <a href="#contact" class="hover:text-foreground transition-colors">Contact</a>
-        </div>
-      </div>
-      <div class="border-t border-border">
-        <div class="mx-auto max-w-7xl px-6 py-4 text-center text-xs text-muted-foreground">
-          Website built by <a href="https://ltdevstudio.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">LT Dev Studio</a> in collaboration with <a href="https://infotechms.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">Infotech Managed Solutions (Pty) Ltd</a>
-        </div>
-      </div>
-    </footer>
-
+    <button id="nav-toggle" class="md:hidden rounded-md p-2 text-foreground" aria-label="Menu">
+      <i id="icon-open" data-lucide="menu" class="h-5 w-5"></i>
+      <i id="icon-close" data-lucide="x" class="h-5 w-5 hidden"></i>
+    </button>
   </div>
 
-  <script src="script.js"></script>
-</body>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+    <div class="flex flex-col px-6 py-4 gap-1">
+      <a href="services.html" class="text-sm font-medium py-2.5">Services</a>
+      <a href="projects.html" class="text-sm font-medium py-2.5">Projects</a>
+      <a href="about.html" class="text-sm font-medium py-2.5">About</a>
+      <a href="contact.html" class="text-sm font-medium py-2.5">Contact</a>
+      <a href="contact.html" class="mt-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground text-center">Get a Quote</a>
+    </div>
+  </div>
+</header>
+<main class="flex-1">
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[92vh] overflow-hidden pt-28 flex items-center">
+  <div class="absolute inset-0">
+    <img src="assets/hero-construction.jpg" alt="TandZ Construction site at golden hour" class="h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-b from-background/85 via-background/75 to-background"></div>
+    <div class="absolute inset-0 blueprint-bg opacity-20 mix-blend-overlay"></div>
+  </div>
+<div class="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 py-32 lg:py-40 w-full">
+  <div class="max-w-3xl rounded-2xl bg-background/35 p-6 md:p-8 backdrop-blur-sm">
+    <div class="reveal inline-flex items-center gap-2 rounded-full border border-white/40 bg-black/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm">
+      <span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
+      Nearly 30 Years · Level 1 B-BBEE · 60% Black Women-Owned
+    </div>
+
+    <h1 class="reveal mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl" style="animation-delay: 120ms;">
+      We <span class="text-amber-grad">build</span><br />
+      what South Africa<br />
+      runs on.
+    </h1>
+
+    <p class="reveal mt-8 max-w-xl text-lg text-white/90 leading-relaxed" style="animation-delay: 300ms;">
+      Trusted by Eskom, Anglo and government departments for 23+ years.
+      Electrical installation, civil maintenance, RDP housing, project
+      management — delivered safely, on time, and built to last.
+    </p>
+
+    <div class="reveal mt-10 flex flex-wrap items-center gap-4" style="animation-delay: 450ms;">
+      <a href="contact.html" class="group inline-flex items-center gap-3 rounded-md bg-primary px-7 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-all hover:brightness-110">
+        Start a project
+        <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
+      </a>
+
+      <a href="projects.html" class="inline-flex items-center gap-2 rounded-md border border-white/40 bg-black/30 backdrop-blur px-7 py-4 text-sm font-semibold text-white hover:bg-card transition-colors">
+        View our work
+      </a>
+    </div>
+  </div>
+</div>
+  <div class="hazard-stripe absolute bottom-0 left-0 right-0 h-3"></div>
+</section>
+
+<!-- CLIENTS -->
+<section class="border-b border-border bg-card/50 py-10 overflow-hidden">
+  <div class="mx-auto max-w-7xl px-6">
+    <p class="text-center text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">Trusted by South Africa's biggest names</p>
+    <div class="relative overflow-hidden">
+      <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 35s linear infinite; width: max-content;">
+        <span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">ESKOM</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">ANGLO AMERICAN</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">DEPT OF PUBLIC WORKS</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">SAPS</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">KUSILE POWER</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">HENDRINA POWER</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">EMALAHLENI</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">HUMAN SETTLEMENT</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">ESKOM</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">ANGLO AMERICAN</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">DEPT OF PUBLIC WORKS</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">SAPS</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">KUSILE POWER</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">HENDRINA POWER</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">EMALAHLENI</span><span class="font-display text-xl md:text-2xl font-bold text-muted-foreground/70 tracking-widest">HUMAN SETTLEMENT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="relative overflow-hidden bg-card py-20 border-b border-border">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+      
+      <div class="reveal-scroll text-center lg:text-left" data-delay="0">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none"><span data-counter data-to="23" data-suffix="+">0</span></div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Years of experience</div>
+      </div>
+      <div class="reveal-scroll text-center lg:text-left" data-delay="120">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none"><span data-counter data-to="32" data-suffix="+">0</span></div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Projects completed</div>
+      </div>
+      <div class="reveal-scroll text-center lg:text-left" data-delay="240">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none">R<span data-counter data-to="200" data-suffix="M+">0</span></div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Rand value delivered</div>
+      </div>
+      <div class="reveal-scroll text-center lg:text-left" data-delay="360">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none"><span data-counter data-to="99" data-suffix="%">0</span></div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Project success rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TURNKEY / TRANSFORMATION PREVIEW -->
+<section class="relative py-24 overflow-hidden border-b border-border bg-background">
+  <div class="absolute inset-0 blueprint-bg opacity-20"></div>
+
+  <div class="relative mx-auto max-w-7xl px-6">
+    <div class="reveal-scroll mb-14 max-w-3xl">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
+        <span class="h-px w-8 bg-primary"></span> Turnkey & Transformation
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase leading-[1]">
+        Infrastructure solutions<br />built for long-term impact.
+      </h2>
+      <p class="mt-6 text-muted-foreground leading-relaxed">
+        For nearly 30 years, TandZ Construction has delivered complex infrastructure and construction projects across South Africa. Through our Turnkey Division, we provide integrated solutions across energy, water, transport, distribution networks and public services.
+      </p>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-3">
+      <article class="reveal-scroll service-card" data-delay="0">
+        <div class="service-icon"><i data-lucide="network" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Turnkey Delivery</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+          End-to-end design, build and infrastructure solutions that support energy reliability, water security and transport efficiency.
+        </p>
+      </article>
+
+      <article class="reveal-scroll service-card" data-delay="100">
+        <div class="service-icon"><i data-lucide="handshake" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Public & Private Partnerships</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+          Partnering with government and the private sector to accelerate sustainable development and create long-term community value.
+        </p>
+      </article>
+
+      <article class="reveal-scroll service-card" data-delay="200">
+        <div class="service-icon"><i data-lucide="leaf" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Smart Sustainable Growth</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+          Integrating renewable energy, smart technologies and socio-economic development into projects that are built to last.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EMPOWERMENT STATS -->
+<section class="relative overflow-hidden bg-card py-20 border-b border-border">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal-scroll mb-12 text-center">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
+        <span class="h-px w-8 bg-primary"></span> Transformation
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase leading-[1]">
+        Building communities<br />through empowerment.
+      </h2>
+      <p class="mx-auto mt-5 max-w-2xl text-muted-foreground leading-relaxed">
+        TandZ Construction is committed to meaningful transformation through skills development, preferential procurement, enterprise development and socio-economic investment.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="reveal-scroll text-center" data-delay="0">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none">1</div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">B-BBEE Level</div>
+      </div>
+
+      <div class="reveal-scroll text-center" data-delay="120">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none">60%</div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Black Women-Owned</div>
+      </div>
+
+      <div class="reveal-scroll text-center" data-delay="240">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none">30</div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Years Experience</div>
+      </div>
+
+      <div class="reveal-scroll text-center" data-delay="360">
+        <div class="font-display text-5xl sm:text-7xl font-bold text-amber-grad leading-none">SMME</div>
+        <div class="mt-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Supplier Development</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="relative py-24">
+  <div class="absolute inset-0 blueprint-bg opacity-25"></div>
+  <div class="relative mx-auto max-w-7xl px-6">
+    <div class="reveal-scroll flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4"><span class="h-px w-8 bg-primary"></span> What we do</div>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase max-w-2xl leading-[1]">Construction services<br />built to deliver.</h2>
+      </div>
+      <p class="max-w-md text-muted-foreground">Electrical, civil, housing, cleaning and transport services delivered by one experienced contractor.</p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      
+      <article class="reveal-scroll service-card" data-delay="0">
+        <div class="service-icon"><i data-lucide="zap" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Electrical Services</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Installation, meter reading and maintenance for industrial environments.</p>
+      </article>
+      <article class="reveal-scroll service-card" data-delay="80">
+        <div class="service-icon"><i data-lucide="hammer" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Civil Maintenance</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Painting, paving, plumbing, renovations and facility repairs.</p>
+      </article>
+      <article class="reveal-scroll service-card" data-delay="160">
+        <div class="service-icon"><i data-lucide="building-2" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">General Construction</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Offices, schools, police stations, power-station upgrades and more.</p>
+      </article>
+      <article class="reveal-scroll service-card" data-delay="240">
+        <div class="service-icon"><i data-lucide="hard-hat" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Housing Projects</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Large-scale RDP and residential developments for provincial governments.</p>
+      </article>
+      <article class="reveal-scroll service-card" data-delay="320">
+        <div class="service-icon"><i data-lucide="sparkles" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Industrial Cleaning</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Workshops, plants, conveyor belts and rubble removal at scale.</p>
+      </article>
+      <article class="reveal-scroll service-card" data-delay="400">
+        <div class="service-icon"><i data-lucide="truck" class="h-6 w-6"></i></div>
+        <h3 class="mt-5 font-display text-xl font-bold uppercase">Transportation</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Reliable employee transport to mines, power stations and sites.</p>
+      </article>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="services.html" class="btn-primary">View All Services <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section class="relative py-24 bg-card border-y border-border">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal-scroll mb-14 max-w-3xl">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4"><span class="h-px w-8 bg-primary"></span> Selected work</div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase leading-[1]">Two decades.<br />Built for keeps.</h2>
+    </div>
+    <div class="grid gap-8 lg:grid-cols-3">
+      
+      <article class="reveal-scroll project-card" data-delay="0">
+        <div class="project-card-media">
+          <img src="assets/project-powerstation.jpg" alt="Power Stations" loading="lazy" />
+          <div class="project-card-fade"></div>
+          <div class="project-card-tag">Power Stations</div>
+          <div class="project-card-body">
+            <div class="text-xs text-muted-foreground uppercase tracking-wider">2006 – 2018</div>
+            <h3 class="mt-2 font-display text-xl font-bold leading-tight">Hendrina, Matla, Kusile, Kendal & Camden</h3>
+            <p class="mt-2 text-sm text-muted-foreground">R 50M+ delivered across Eskom power stations</p>
+          </div>
+        </div>
+      </article>
+      <article class="reveal-scroll project-card" data-delay="100">
+        <div class="project-card-media">
+          <img src="assets/project-school.jpg" alt="Community" loading="lazy" />
+          <div class="project-card-fade"></div>
+          <div class="project-card-tag">Community</div>
+          <div class="project-card-body">
+            <div class="text-xs text-muted-foreground uppercase tracking-wider">2008 – 2012</div>
+            <h3 class="mt-2 font-display text-xl font-bold leading-tight">Schools, learning centres & police stations</h3>
+            <p class="mt-2 text-sm text-muted-foreground">Computer centres, science centres, satellite SAPS buildings</p>
+          </div>
+        </div>
+      </article>
+      <article class="reveal-scroll project-card" data-delay="200">
+        <div class="project-card-media">
+          <img src="assets/service-housing.jpg" alt="Housing" loading="lazy" />
+          <div class="project-card-fade"></div>
+          <div class="project-card-tag">Housing</div>
+          <div class="project-card-body">
+            <div class="text-xs text-muted-foreground uppercase tracking-wider">2016 – 2020</div>
+            <h3 class="mt-2 font-display text-xl font-bold leading-tight">932 RDP houses for Mpumalanga</h3>
+            <p class="mt-2 text-sm text-muted-foreground">R 140M+ rural & farm housing delivered</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="mt-12 text-center">
+      <a href="projects.html" class="btn-secondary">View All Projects <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="relative py-24 overflow-hidden">
+  <div class="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-primary/10 blur-3xl"></div>
+  <div class="mx-auto max-w-7xl px-6 grid gap-14 lg:grid-cols-2 lg:items-center">
+    <div class="reveal-scroll">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4"><span class="h-px w-8 bg-primary"></span> About TandZ</div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase leading-[1.05]">A black-led contractor with a track record the parastatals trust.</h2>
+      <p class="mt-6 text-muted-foreground leading-relaxed">Founded in 2000 and led by Managing Director Dr. Gabriel Bonginkosi Ngomane, TandZ Construction has grown from a single electrical contract into a multi-discipline construction business delivering across Mpumalanga, Limpopo, Gauteng and beyond.</p>
+      <p class="mt-4 text-muted-foreground leading-relaxed">Flat structure. Experienced functional heads. Direct communication. That's why our clients come back — and why their projects finish on time.</p>
+      <div class="mt-8"><a href="about.html" class="btn-primary">Read our story <i data-lucide="arrow-right" class="h-4 w-4"></i></a></div>
+    </div>
+    <div class="reveal-scroll grid grid-cols-2 gap-4" data-delay="150">
+      
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="award" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">Technical Expertise</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Qualified electricians, bricklayers, plumbers and engineers in-house.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="shield" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">Safety First</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Dedicated safety officer on every project. Zero-compromise compliance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="users" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">B-BBEE Empowerment</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Black-owned and led since 2000. Creating jobs where they matter.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="clipboard-list" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">Holistic Approach</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Sustainable methods, community impact, long-term durability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="relative py-24 overflow-hidden border-t border-border bg-card">
+  <div class="absolute inset-0 blueprint-bg opacity-20"></div>
+  <div class="relative mx-auto max-w-4xl px-6 text-center">
+    <div class="reveal-scroll">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary">Ready to build?</div>
+      <h2 class="mt-6 font-display text-4xl md:text-6xl font-bold uppercase">Start Your Next Project<span class="text-amber-grad block">With TandZ</span></h2>
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">Speak to our team about electrical, civil, housing, cleaning or transport project requirements.</p>
+      <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contact.html" class="btn-primary justify-center">Get A Quote <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+        <a href="services.html" class="btn-secondary justify-center">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-border bg-card mt-0">
+  <div class="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3">
+        <img src="assets/tandz-logo.png" alt="TandZ" class="h-10 w-auto" />
+        <div>
+          <div class="font-display font-bold uppercase tracking-wide">TandZ Construction CC</div>
+          <div class="text-xs text-muted-foreground">Building South Africa since 2000</div>
+        </div>
+      </div>
+      <p class="mt-5 max-w-md text-sm text-muted-foreground leading-relaxed">
+        Multi-discipline construction contractor delivering electrical, civil,
+        housing, cleaning and transport services across South Africa.
+      </p>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Explore</div>
+      <ul class="space-y-2 text-sm text-muted-foreground">
+        <li><a href="services.html" class="hover:text-foreground transition-colors">Services</a></li>
+        <li><a href="projects.html" class="hover:text-foreground transition-colors">Projects</a></li>
+        <li><a href="about.html" class="hover:text-foreground transition-colors">About</a></li>
+        <li><a href="contact.html" class="hover:text-foreground transition-colors">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-muted-foreground">
+        <li class="flex items-start gap-2"><i data-lucide="phone" class="h-4 w-4 mt-0.5 text-primary"></i> 013 656 1072</li>
+        <li class="flex items-start gap-2"><i data-lucide="mail" class="h-4 w-4 mt-0.5 text-primary"></i> enquries@tandz.co.za</li>
+        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="h-4 w-4 mt-0.5 text-primary"></i> 63 Cnr Mandela &amp; Allenby St, Emalahleni 1039</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-border">
+    <div class="mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+      <div>© <span id="year"></span> TandZ Construction CC. All rights reserved.</div>
+      <div>
+        Website by
+        <a href="https://ltdevstudio.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">LT Dev Studio</a>
+        in collaboration with
+        <a href="https://infotechms.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">Infotech Managed Solutions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</div></body>
 </html>

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | TandZ Construction</title>
+  <meta name="description" content="Founded in 2000, TandZ Construction is a black-led, multi-discipline contractor delivering across South Africa with technical expertise and a safety-first culture." />
+  <meta name="author" content="TandZ Construction CC" />
+  <meta property="og:title" content="About | TandZ Construction" />
+  <meta property="og:description" content="Founded in 2000, TandZ Construction is a black-led, multi-discipline contractor delivering across South Africa with technical expertise and a safety-first culture." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/tandz-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'Inter', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            background: 'var(--background)',
+            foreground: 'var(--foreground)',
+            card: { DEFAULT: 'var(--card)', foreground: 'var(--card-foreground)' },
+            popover: { DEFAULT: 'var(--popover)', foreground: 'var(--popover-foreground)' },
+            primary: { DEFAULT: 'var(--primary)', foreground: 'var(--primary-foreground)' },
+            secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+            muted: { DEFAULT: 'var(--muted)', foreground: 'var(--muted-foreground)' },
+            accent: { DEFAULT: 'var(--accent)', foreground: 'var(--accent-foreground)' },
+            destructive: { DEFAULT: 'var(--destructive)', foreground: 'var(--destructive-foreground)' },
+            border: 'var(--border)',
+            input: 'var(--input)',
+            ring: 'var(--ring)',
+          },
+          borderRadius: {
+            lg: 'var(--radius)',
+            md: 'calc(var(--radius) - 2px)',
+            sm: 'calc(var(--radius) - 4px)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body class="bg-background text-foreground">
+<div class="min-h-screen flex flex-col">
+
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+    <a href="index.html" class="flex items-center group">
+      <img
+        src="assets/tandz-logo.png"
+        alt="TandZ Construction"
+        class="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105"
+      />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:brightness-110 transition-all" style="box-shadow: 0 0 24px oklch(0.55 0.15 255/0.3);">
+        Get a Quote <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </a>
+    </nav>
+
+    <button id="nav-toggle" class="md:hidden rounded-md p-2 text-foreground" aria-label="Menu">
+      <i id="icon-open" data-lucide="menu" class="h-5 w-5"></i>
+      <i id="icon-close" data-lucide="x" class="h-5 w-5 hidden"></i>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+    <div class="flex flex-col px-6 py-4 gap-1">
+      <a href="services.html" class="text-sm font-medium py-2.5">Services</a>
+      <a href="projects.html" class="text-sm font-medium py-2.5">Projects</a>
+      <a href="about.html" class="text-sm font-medium py-2.5">About</a>
+      <a href="contact.html" class="text-sm font-medium py-2.5">Contact</a>
+      <a href="contact.html" class="mt-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground text-center">Get a Quote</a>
+    </div>
+  </div>
+</header>
+<main class="flex-1">
+
+
+<section class="page-hero relative pt-40 pb-20 overflow-hidden border-b border-border">
+  <div class="absolute inset-0 blueprint-bg opacity-40"></div>
+  <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+  <div class="relative mx-auto max-w-7xl px-6 text-center">
+    <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+      <span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span> About TandZ
+    </div>
+    <h1 class="mt-6 font-display text-4xl sm:text-6xl md:text-7xl font-bold uppercase leading-[1]">Building South Africa<br/><span class='text-amber-grad'>since 2000</span></h1>
+    <p class="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">Two decades of delivering electrical, civil, housing, transportation and infrastructure solutions across the country.</p>
+  </div>
+  <div class="hazard-stripe absolute bottom-0 left-0 right-0 h-2 opacity-80"></div>
+</section>
+
+<section class="py-20 overflow-hidden relative">
+  <div class="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-primary/10 blur-3xl"></div>
+  <div class="relative mx-auto max-w-7xl px-6 grid gap-14 lg:grid-cols-2 lg:items-center">
+    <div class="reveal-scroll">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4"><span class="h-px w-8 bg-primary"></span> Our story</div>
+      <h2 class="font-display text-3xl sm:text-5xl font-bold uppercase leading-[1.05]">A black-led contractor with a track record the parastatals trust.</h2>
+      <p class="mt-6 text-muted-foreground leading-relaxed">Founded in 2000 and led by Managing Director Dr. Gabriel Bonginkosi Ngomane, TandZ Construction has grown from a single electrical contract into a multi-discipline construction business delivering across Mpumalanga, Limpopo, Gauteng and beyond.</p>
+      <p class="mt-4 text-muted-foreground leading-relaxed">Flat structure. Experienced functional heads. Direct communication. That's why our clients come back — and why their projects finish on time.</p>
+      <div class="mt-8"><a href="contact.html" class="btn-primary">Work with us <i data-lucide="arrow-right" class="h-4 w-4"></i></a></div>
+    </div>
+    <div class="reveal-scroll grid grid-cols-2 gap-4" data-delay="150">
+      
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="award" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">Technical Expertise</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Qualified electricians, bricklayers, plumbers and engineers in-house.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="shield" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">Safety First</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Dedicated safety officer on every project. Zero-compromise compliance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="users" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">B-BBEE Empowerment</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Black-owned and led since 2000. Creating jobs where they matter.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-lucide="clipboard-list" class="h-5 w-5"></i></div>
+        <h3 class="mt-4 font-display text-base font-bold uppercase tracking-wide">Holistic Approach</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Sustainable methods, community impact, long-term durability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 border-y border-border bg-card">
+  <div class="mx-auto max-w-7xl px-6 grid gap-8 lg:grid-cols-3">
+    <div class="info-card">
+      <div class="feature-icon"><i data-lucide="target" class="h-5 w-5"></i></div>
+      <h2 class="mt-5 font-display text-2xl font-bold uppercase">Our Mission</h2>
+      <p class="mt-4 text-sm text-muted-foreground leading-relaxed">
+        At T&amp;Z Construction CC, our mission reflects a deep commitment to making a positive,
+        lasting impact on the lives of South Africans by excelling in the design, provision and
+        maintenance of civil engineering infrastructure. We strive to be a beacon of reliability
+        and proficiency in delivering top-notch solutions for both the public and private sectors —
+        roads, bridges, buildings and other vital structures, built to last.
+      </p>
+    </div>
+    <div class="info-card">
+      <div class="feature-icon"><i data-lucide="eye" class="h-5 w-5"></i></div>
+      <h2 class="mt-5 font-display text-2xl font-bold uppercase">Our Vision</h2>
+      <p class="mt-4 text-sm text-muted-foreground leading-relaxed">
+        Management has a lot to do with answers. Leadership is a function of questions.
+        And the first question for a leader is always: <em>"Who do we intend to be?"</em>
+        Not "what are we going to do?" — but who we intend to be for our clients,
+        our teams and the communities we build for.
+      </p>
+    </div>
+    <div class="info-card">
+      <div class="feature-icon"><i data-lucide="gem" class="h-5 w-5"></i></div>
+      <h2 class="mt-5 font-display text-2xl font-bold uppercase">Our Values</h2>
+      <ul class="mt-4 space-y-3 text-sm text-muted-foreground">
+        <li><strong class="text-foreground">Technical expertise</strong> — skilled professionals delivering high-quality work.</li>
+        <li><strong class="text-foreground">Responsiveness</strong> — adapting to the demands of clients and industry.</li>
+        <li><strong class="text-foreground">Industry knowledge</strong> — staying current with sector developments.</li>
+        <li><strong class="text-foreground">Holistic approach</strong> — sustainability and community well-being.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 border-y border-border bg-card">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
+        <span class="h-px w-8 bg-primary"></span> Transformation
+      </div>
+
+      <h2 class="font-display text-3xl md:text-5xl font-bold uppercase">
+        Empowering South Africa Through Construction
+      </h2>
+
+      <p class="mt-6 max-w-3xl mx-auto text-muted-foreground leading-relaxed">
+        TandZ Construction is committed to meaningful transformation and sustainable empowerment.
+        We are proud to be a Level 1 B-BBEE Contributor and a 60% Black Women-Owned company,
+        creating opportunities for employees, suppliers, subcontractors and communities across South Africa.
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="info-card">
+        <h3 class="font-display text-xl font-bold uppercase">Level 1 B-BBEE</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Maintaining one of the highest empowerment ratings while supporting meaningful economic transformation.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3 class="font-display text-xl font-bold uppercase">60% Black Women-Owned</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Driving inclusive growth and leadership within South Africa's construction sector.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3 class="font-display text-xl font-bold uppercase">Sustainable Empowerment</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Investing in people, businesses and communities to create long-term economic opportunities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-12 lg:grid-cols-2">
+
+      <div>
+        <h2 class="font-display text-3xl font-bold uppercase">
+          Skills Development
+        </h2>
+
+        <p class="mt-5 text-muted-foreground leading-relaxed">
+          TandZ is committed to education, training and skills development within the construction industry.
+          We provide opportunities for employees, subcontractors and unemployed individuals to gain valuable skills,
+          experience and qualifications.
+        </p>
+
+        <ul class="mt-6 space-y-3 text-muted-foreground">
+          <li>• Employee training and development programmes</li>
+          <li>• Industry-focused skills development initiatives</li>
+          <li>• Support for unemployed individuals seeking opportunities</li>
+          <li>• Educational bursaries and qualification support</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="font-display text-3xl font-bold uppercase">
+          Enterprise & Supplier Development
+        </h2>
+
+        <p class="mt-5 text-muted-foreground leading-relaxed">
+          We actively support emerging black-owned businesses through mentorship,
+          procurement opportunities, business support and enterprise development initiatives.
+        </p>
+
+        <ul class="mt-6 space-y-3 text-muted-foreground">
+          <li>• Guaranteed work opportunities on selected projects</li>
+          <li>• Business mentorship and management support</li>
+          <li>• Training and development assistance</li>
+          <li>• Registration and compliance support</li>
+          <li>• Administrative and estimating training</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="relative py-24 bg-card border-t border-border">
+  <div class="mx-auto max-w-7xl px-6 text-center">
+
+    <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary mb-4">
+      <span class="h-px w-8 bg-primary"></span> Community Impact
+    </div>
+
+    <h2 class="font-display text-4xl md:text-6xl font-bold uppercase">
+      Building Communities,<br />
+      Not Just Infrastructure
+    </h2>
+
+    <p class="mx-auto mt-6 max-w-3xl text-muted-foreground leading-relaxed">
+      Through our socio-economic development initiatives, TandZ supports communities
+      by investing in education, skills development, employment opportunities and local infrastructure.
+    </p>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-14">
+
+      <div class="feature-card">
+        <h3 class="font-display text-lg font-bold uppercase">Training</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Sponsorship of education and skills development programmes.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3 class="font-display text-lg font-bold uppercase">Employment</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Creating local employment opportunities within project communities.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3 class="font-display text-lg font-bold uppercase">Community Support</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Monetary and material donations to local charities and organisations.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3 class="font-display text-lg font-bold uppercase">Infrastructure</h3>
+        <p class="mt-3 text-sm text-muted-foreground">
+          Supporting community facilities and development projects at reduced cost.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="text-center mb-14">
+      <h2 class="font-display text-3xl md:text-5xl font-bold uppercase">Why Choose TandZ</h2>
+      <p class="mt-4 text-muted-foreground max-w-2xl mx-auto">A multi-disciplinary construction company with experience, compliance and hands-on leadership.</p>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      
+      <div class="info-card">
+        <h3 class="font-display text-xl font-bold uppercase">23+ Years Experience</h3>
+        <p class="mt-3 text-sm text-muted-foreground leading-relaxed">Proven delivery across electrical, civil, housing and industrial projects since 2000.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="font-display text-xl font-bold uppercase">Trusted By Major Clients</h3>
+        <p class="mt-3 text-sm text-muted-foreground leading-relaxed">Experience with parastatals, government, mining and industrial clients.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="font-display text-xl font-bold uppercase">Safety & Compliance</h3>
+        <p class="mt-3 text-sm text-muted-foreground leading-relaxed">Structured project delivery with safety, quality and compliance built in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-border bg-card mt-0">
+  <div class="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3">
+        <img src="assets/tandz-logo.png" alt="TandZ" class="h-10 w-auto" />
+        <div>
+          <div class="font-display font-bold uppercase tracking-wide">TandZ Construction CC</div>
+          <div class="text-xs text-muted-foreground">Building South Africa since 2000</div>
+        </div>
+      </div>
+      <p class="mt-5 max-w-md text-sm text-muted-foreground leading-relaxed">
+        Multi-discipline construction contractor delivering electrical, civil,
+        housing, cleaning and transport services across South Africa.
+      </p>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Explore</div>
+      <ul class="space-y-2 text-sm text-muted-foreground">
+        <li><a href="services.html" class="hover:text-foreground transition-colors">Services</a></li>
+        <li><a href="projects.html" class="hover:text-foreground transition-colors">Projects</a></li>
+        <li><a href="about.html" class="hover:text-foreground transition-colors">About</a></li>
+        <li><a href="contact.html" class="hover:text-foreground transition-colors">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-muted-foreground">
+        <li class="flex items-start gap-2"><i data-lucide="phone" class="h-4 w-4 mt-0.5 text-primary"></i> 013 656 1072</li>
+        <li class="flex items-start gap-2"><i data-lucide="mail" class="h-4 w-4 mt-0.5 text-primary"></i> enquries@tandz.co.za</li>
+        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="h-4 w-4 mt-0.5 text-primary"></i> 63 Cnr Mandela &amp; Allenby St, Emalahleni 1039</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-border">
+    <div class="mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+      <div>© <span id="year"></span> TandZ Construction CC. All rights reserved.</div>
+      <div>
+        Website by
+        <a href="https://ltdevstudio.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">LT Dev Studio</a>
+        in collaboration with
+        <a href="https://infotechms.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">Infotech Managed Solutions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</div></body>
+</html>

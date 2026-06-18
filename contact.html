@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | TandZ Construction</title>
+  <meta name="description" content="Speak to TandZ Construction about your electrical, civil, housing, cleaning or transport project. We respond within one business day." />
+  <meta name="author" content="TandZ Construction CC" />
+  <meta property="og:title" content="Contact | TandZ Construction" />
+  <meta property="og:description" content="Speak to TandZ Construction about your electrical, civil, housing, cleaning or transport project. We respond within one business day." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/tandz-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'Inter', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            background: 'var(--background)',
+            foreground: 'var(--foreground)',
+            card: { DEFAULT: 'var(--card)', foreground: 'var(--card-foreground)' },
+            popover: { DEFAULT: 'var(--popover)', foreground: 'var(--popover-foreground)' },
+            primary: { DEFAULT: 'var(--primary)', foreground: 'var(--primary-foreground)' },
+            secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+            muted: { DEFAULT: 'var(--muted)', foreground: 'var(--muted-foreground)' },
+            accent: { DEFAULT: 'var(--accent)', foreground: 'var(--accent-foreground)' },
+            destructive: { DEFAULT: 'var(--destructive)', foreground: 'var(--destructive-foreground)' },
+            border: 'var(--border)',
+            input: 'var(--input)',
+            ring: 'var(--ring)',
+          },
+          borderRadius: {
+            lg: 'var(--radius)',
+            md: 'calc(var(--radius) - 2px)',
+            sm: 'calc(var(--radius) - 4px)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body class="bg-background text-foreground">
+<div class="min-h-screen flex flex-col">
+
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+    <a href="index.html" class="flex items-center group">
+      <img
+        src="assets/tandz-logo.png"
+        alt="TandZ Construction"
+        class="h-20 md:h-24 w-auto transition-transform duration-300 group-hover:scale-105"
+      />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:brightness-110 transition-all" style="box-shadow: 0 0 24px oklch(0.55 0.15 255/0.3);">
+        Get a Quote <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </a>
+    </nav>
+
+    <button id="nav-toggle" class="md:hidden rounded-md p-2 text-foreground" aria-label="Menu">
+      <i id="icon-open" data-lucide="menu" class="h-5 w-5"></i>
+      <i id="icon-close" data-lucide="x" class="h-5 w-5 hidden"></i>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+    <div class="flex flex-col px-6 py-4 gap-1">
+      <a href="services.html" class="text-sm font-medium py-2.5">Services</a>
+      <a href="projects.html" class="text-sm font-medium py-2.5">Projects</a>
+      <a href="about.html" class="text-sm font-medium py-2.5">About</a>
+      <a href="contact.html" class="text-sm font-medium py-2.5">Contact</a>
+      <a href="contact.html" class="mt-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground text-center">Get a Quote</a>
+    </div>
+  </div>
+</header>
+<main class="flex-1">
+
+
+<section class="page-hero relative pt-40 pb-20 overflow-hidden border-b border-border">
+  <div class="absolute inset-0 blueprint-bg opacity-40"></div>
+  <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+  <div class="relative mx-auto max-w-7xl px-6 text-center">
+    <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+      <span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span> Get in touch
+    </div>
+    <h1 class="mt-6 font-display text-4xl sm:text-6xl md:text-7xl font-bold uppercase leading-[1]">Let's build<br/><span class='text-amber-grad'>something solid.</span></h1>
+    <p class="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">Tell us about your project — from electrical and civil works to large-scale infrastructure and turnkey developments. We respond within one business day.</p>
+  </div>
+  <div class="hazard-stripe absolute bottom-0 left-0 right-0 h-2 opacity-80"></div>
+</section>
+<section class="py-16 border-b border-border bg-card">
+  <div class="mx-auto max-w-7xl px-6">
+
+    <div class="text-center mb-12">
+      <h2 class="font-display text-3xl md:text-5xl font-bold uppercase">
+        Let's Discuss Your Project
+      </h2>
+
+      <p class="mt-5 max-w-3xl mx-auto text-muted-foreground">
+        Whether you're planning infrastructure upgrades, housing developments,
+        electrical installations, civil works or large-scale turnkey projects,
+        our team is ready to assist.
+      </p>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-6">
+
+      <div class="feature-card text-center">
+        <h3 class="font-display text-sm font-bold uppercase">
+          Electrical
+        </h3>
+      </div>
+
+      <div class="feature-card text-center">
+        <h3 class="font-display text-sm font-bold uppercase">
+          Civil
+        </h3>
+      </div>
+
+      <div class="feature-card text-center">
+        <h3 class="font-display text-sm font-bold uppercase">
+          Housing
+        </h3>
+      </div>
+
+      <div class="feature-card text-center">
+        <h3 class="font-display text-sm font-bold uppercase">
+          Transport
+        </h3>
+      </div>
+
+      <div class="feature-card text-center">
+        <h3 class="font-display text-sm font-bold uppercase">
+          Cleaning
+        </h3>
+      </div>
+
+      <div class="feature-card text-center">
+        <h3 class="font-display text-sm font-bold uppercase">
+          Turnkey
+        </h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-10 lg:grid-cols-5">
+
+      <div class="reveal-scroll lg:col-span-2 space-y-5">
+        <a href="tel:+27136561072" class="contact-line group">
+          <div class="contact-icon"><i data-lucide="phone" class="h-5 w-5"></i></div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-muted-foreground">Office</div>
+            <div class="font-semibold">013 656 1072 · 061 992 3714</div>
+          </div>
+        </a>
+        <a href="mailto:enquries@tandz.co.za" class="contact-line group">
+          <div class="contact-icon"><i data-lucide="mail" class="h-5 w-5"></i></div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
+            <div class="font-semibold">enquries@tandz.co.za</div>
+          </div>
+        </a>
+        <div class="contact-line">
+          <div class="contact-icon"><i data-lucide="map-pin" class="h-5 w-5"></i></div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-muted-foreground">Address</div>
+            <div class="font-semibold leading-relaxed">63 Cnr Mandela &amp; Allenby Street,<br/>Emalahleni 1039</div>
+          </div>
+        </div>
+        <div class="contact-line">
+          <div class="contact-icon"><i data-lucide="clock" class="h-5 w-5"></i></div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-muted-foreground">Hours</div>
+            <div class="font-semibold">Mon–Fri · 08:00 – 17:00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-scroll lg:col-span-3" data-delay="150">
+        <form id="contact-form" class="rounded-2xl border border-border bg-card p-6 sm:p-8" style="box-shadow: var(--shadow-deep);">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="name" class="form-label">Full name<span class="text-primary"> *</span></label>
+              <input id="name" name="name" type="text" required class="form-input" />
+            </div>
+            <div>
+              <label for="company" class="form-label">Company</label>
+              <input id="company" name="company" type="text" class="form-input" />
+            </div>
+            <div>
+              <label for="email" class="form-label">Email<span class="text-primary"> *</span></label>
+              <input id="email" name="email" type="email" required class="form-input" />
+            </div>
+            <div>
+              <label for="phone" class="form-label">Phone<span class="text-primary"> *</span></label>
+              <input id="phone" name="phone" type="tel" required class="form-input" />
+            </div>
+          </div>
+          <div class="mt-5">
+            <label for="service" class="form-label">Service needed</label>
+            <select id="service" required class="form-input">
+              <option value="">Select a service…</option>
+              <option>Electrical Services</option>
+              <option>Civil Maintenance</option>
+              <option>General Construction</option>
+              <option>Housing Projects</option>
+              <option>Industrial Cleaning</option>
+              <option>Transportation</option>
+              <option>Turnkey Infrastructure Solutions</option>
+              <option>Public-Private Partnership (PPP) Projects</option>
+              <option>Renewable Energy Infrastructure</option>
+              <option>Water Infrastructure</option> 
+              <option>Other / not sure</option>
+            </select>
+          </div>
+          <div class="mt-5">
+            <label for="details" class="form-label">Project details</label>
+            <textarea id="details" rows="5" required class="form-input" placeholder="Site location, scope, timeline, budget range…"></textarea>
+          </div>
+          <button type="submit" class="mt-7 w-full inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground hover:brightness-110 transition-all" style="box-shadow: 0 10px 40px -10px oklch(0.55 0.15 255/0.6);">
+            Send enquiry <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+          <p class="mt-3 text-center text-xs text-muted-foreground">We respond within one business day.</p>
+        </form>
+
+        <div id="contact-success" class="hidden rounded-2xl border border-border bg-card p-8 text-center" style="box-shadow: var(--shadow-deep);">
+          <div class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-primary text-primary-foreground"><i data-lucide="check-circle-2" class="h-8 w-8"></i></div>
+          <h3 class="mt-6 font-display text-2xl font-bold uppercase">Thanks — message received</h3>
+          <p class="mt-2 text-muted-foreground">A member of our team will be in touch within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-border bg-card mt-0">
+  <div class="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3">
+        <img src="assets/tandz-logo.png" alt="TandZ" class="h-10 w-auto" />
+        <div>
+          <div class="font-display font-bold uppercase tracking-wide">TandZ Construction CC</div>
+          <div class="text-xs text-muted-foreground">Building South Africa since 2000</div>
+        </div>
+      </div>
+      <p class="mt-5 max-w-md text-sm text-muted-foreground leading-relaxed">
+        Multi-discipline construction contractor delivering electrical, civil,
+        housing, cleaning and transport services across South Africa.
+      </p>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Explore</div>
+      <ul class="space-y-2 text-sm text-muted-foreground">
+        <li><a href="services.html" class="hover:text-foreground transition-colors">Services</a></li>
+        <li><a href="projects.html" class="hover:text-foreground transition-colors">Projects</a></li>
+        <li><a href="about.html" class="hover:text-foreground transition-colors">About</a></li>
+        <li><a href="contact.html" class="hover:text-foreground transition-colors">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="text-xs font-semibold uppercase tracking-[0.2em] text-foreground mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-muted-foreground">
+        <li class="flex items-start gap-2"><i data-lucide="phone" class="h-4 w-4 mt-0.5 text-primary"></i> 013 656 1072</li>
+        <li class="flex items-start gap-2"><i data-lucide="mail" class="h-4 w-4 mt-0.5 text-primary"></i> enquries@tandz.co.za</li>
+        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="h-4 w-4 mt-0.5 text-primary"></i> 63 Cnr Mandela &amp; Allenby St, Emalahleni 1039</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-border">
+    <div class="mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+      <div>© <span id="year"></span> TandZ Construction CC. All rights reserved.</div>
+      <div>
+        Website by
+        <a href="https://ltdevstudio.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">LT Dev Studio</a>
+        in collaboration with
+        <a href="https://infotechms.co.za" target="_blank" rel="noopener noreferrer" class="underline hover:text-foreground">Infotech Managed Solutions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</div></body>
+</html>
